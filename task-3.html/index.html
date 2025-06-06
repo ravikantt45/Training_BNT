@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enhanced Layout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h3>Sidebar</h3>
+      <ul class="side-menu">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <h2>Welcome</h2>
+      <p>This is the main content area where cards are displayed below.</p>
+
+      <!-- Cards Section -->
+      <div class="card-container">
+        <div class="card">
+          <h3>HTML</h3>
+          <p>Basic Structure</p>
+        </div>
+        <div class="card">
+          <h3>CSS</h3>
+          <p>Styling the Web</p>
+        </div>
+        <div class="card">
+          <h3>JavaScript</h3>
+          <p>Dynamic Behavior</p>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <section class="about-section">
+        <h2>About Me</h2>
+        <p>Hello! I'm Ravikant, a full stack web developer skilled in HTML, CSS, JavaScript, and MERN stack. I build responsive, fast, and elegant websites and applications.</p>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Your Name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Your Email" required />
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" placeholder="Your Phone Number" />
+
+          <label for="message">Message:</label>
+          <textarea id="message" placeholder="Your Message..." rows="4" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </div>
+
+    <!-- Extra Sidebar -->
+    <div class="extra-sidebar">
+      <h3>Right Sidebar</h3>
+      <p>Additional info or links can go here.</p>
+    </div>
+  </div>
+
+</body>
+</html>
