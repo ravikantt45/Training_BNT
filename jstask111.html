@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Task 1</title>
+</head>
+<body>
+  <script>
+    // 1. typeof for datatypes
+    let str = "Hello";
+    let num = 42;
+    console.log(typeof str); 
+    console.log(typeof num); 
+
+    // 2. Merge (+) string & number
+    let merged = "Age: " + 25;
+    console.log(merged); 
+
+    // 3. charAt -
+    console.log("JavaScript".charAt(4)); 
+
+    // 4. lastIndexOf
+    console.log("hello world".lastIndexOf("o")); // 7
+
+    // 5. Typecasting 
+    let s = "12";
+    let converted = Number(s);
+    console.log(converted + 3); 
+
+    // Code without typecast
+    console.log(s + 3); 
+
+    // 6. NaN example
+    let x = "abc";
+    let result = Number(x); 
+    console.log(result); 
+
+    // 7. isInteger
+    console.log(Number.isInteger(10)); // true
+    console.log(Number.isInteger(10.5)); // false
+
+    // 8. parseInt, parseFloat
+    console.log(parseInt("123")); // 123
+    console.log(parseFloat("123.45")); // 123.45
+
+    // 9. Print after decimal (to 2 fixed numbers)
+    let val = 10.6789;
+    console.log(val.toFixed(2)); // 10.68
+
+    // 10. switch example
+    let fruit = "apple";
+    switch (fruit) {
+      case "banana":
+        console.log("Banana selected");
+        break;
+      case "apple":
+        console.log("Apple selected");
+        break;
+      default:
+        console.log("Other fruit");
+    }
+
+    // 11. var, let, const
+    var a = 10;
+    let b = 20;
+    const c = 30;
+    console.log(a, b, c); // 10 20 30
+
+    // Global example
+    var globalVar = "I am global";
+    function showGlobal() {
+      console.log(globalVar);
+    }
+    showGlobal();
+
+    // 12. shift, unshift, push, pop
+    let arr = [1, 2, 3];
+    arr.push(4); // [1, 2, 3, 4]
+    arr.pop();   // [1, 2, 3]
+    arr.shift(); // [2, 3]
+    arr.unshift(0); // [0, 2, 3]
+    console.log(arr);
+
+    // Delete element in array
+    delete arr[1]; // [0, empty, 3]
+    console.log(arr);
+
+    // 13. splice
+    let nums = [10, 20, 30, 40];
+    nums.splice(1, 2); // Removes 20 and 30
+    console.log(nums); // [10, 40]
+
+    // Replace using splice
+    nums.splice(1, 1, 50); // Replace 40 with 50
+    console.log(nums); // [10, 50]
+
+    // 14. reverse
+    let revArr = [1, 2, 3];
+    console.log(revArr.reverse()); 
+
+    // 15. Merge 2 arrays (concat)
+    let a1 = [1, 2];
+    let a2 = [3, 4];
+    let mergedArr = a1.concat(a2);
+    console.log(mergedArr); 
+  </script>
+</body>
+</html>
